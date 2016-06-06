@@ -1,0 +1,45 @@
+.floating-placeholder {
+    position: relative;
+}
+
+.floating-placeholder label {
+    font-family: Arial;
+    background: none;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0
+}
+
+.floating-placeholder label.float-top {
+    top: 25%;
+    color: gray;
+    transition: top .2s ease-out;
+    font-size: 0.9em;
+    z-index: 2
+}
+
+.floating-placeholder input {
+    font: 1em Arial;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    min-height: 3em;
+    padding: 1em 0 0 1em;
+    z-index: 1
+}
+
+.floating-placeholder input:focus {
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+
+.floating-placeholder.input-error input{
+    border: 1px solid red;
+}
+
+.floating-placeholder.input-error label{
+    color: red;
+}

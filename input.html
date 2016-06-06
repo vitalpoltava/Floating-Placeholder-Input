@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Floating Placeholder Input Directive</title>
+
+    <!-- Directive Styles -->
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+<style>
+    #main {
+        width: 20em;
+        margin: 3em;
+    }
+</style>
+
+<div id="main" ng-app="input">
+    <!-- Example call -->
+    <div fp-input fp-value="value" fp-placeholder="Digits only here" fp-pattern="[0-9]+"></div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="directive.js"></script>
+
+</body>
+</html>
